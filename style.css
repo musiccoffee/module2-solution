@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  margin-bottom: 50px;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 75% larger;
+}
+
+.row {
+  margin-bottom: 50px;
+  margin: 10px;
+}
+
+#p1 {
+  width: 150px;
+  height: 30px;
+  background-color: pink;
+  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-weight: bold;
+  position: absolute;
+  float: left;
+  margin-left: 170px;
+}
+
+#p2 {
+  width: 150px;
+  height: 30px;
+  background-color: red;
+  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-weight: bold;
+  position: absolute;
+  float: left;
+  margin-left: 171px;
+  color: white;
+}
+
+#p3 {
+  width: 150px;
+  height: 30px;
+  background-color: yellow;
+  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-weight: bold;
+  position: absolute;
+  float: left;
+  margin-left: 170.5px;
+}
+
+.col-lg-6,
+.col-lg-8 {
+  width: 32%;
+  height: 215px;
+  background-color: gray;
+  position: relative;
+  float: left;
+  border: 1px solid black;
+  margin-top: 13px;
+  margin-left: 10px;
+}
+
+article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25% larger;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  margin: 50px 15px 10px 15px;
+}
+
+/*** Desktop */
+@media only screen and (max-width: 1200px) {
+  #p1,
+  #p2,
+  #p3 {
+    float: left;
+    width: 47%;
+    position: absolute;
+    margin-left: 53%;
+  }
+  .col-lg-6,
+  .col-lg-8 {
+    width: 32%;
+    float: left;
+  }
+}
+
+/*** Laptop */
+@media only screen and (min-width: 992px) {
+  #p1,
+  #p2,
+  #p3 {
+    float: left;
+    width: 47.2%;
+    position: absolute;
+  }
+  .col-lg-6,
+  .col-lg-8 {
+    width: 32%;
+    float: left;
+  }
+}
+
+/*** Tablet ***/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .col-lg-6 {
+    float: left;
+    width: 48%;
+    margin: 8px;
+    height: 300px;
+    font-size: 25% larger;
+  }
+  .col-lg-8 {
+    float: left;
+    width: 97.4%;
+    margin-top: 15px;
+    height: 300px;
+    font-size: 25% larger;
+  }
+  #p1,
+  #p2 {
+    float: left;
+    height: 40px;
+    font-size: 25% larger;
+  }
+  #p3 {
+    height: 40px;
+    float: left;
+    font-size: 25% larger;
+  }
+}
+
+/*** Mobile ***/
+@media only screen and (max-width: 767px) {
+  #p1,
+  #p2,
+  #p3 {
+    float: left;
+    height: 40px;
+    font-size: 25% larger;
+  }
+  .col-lg-6,
+  .col-lg-8 {
+    width: 97.5%;
+    height: 185px;
+    font-size: 25% larger;
+    float: left;
+    margin-bottom: 15px;
+  }
+  h1 {
+    margin-bottom: 20px;
+  }
+}
